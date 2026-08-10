@@ -1,0 +1,145 @@
+/* ------------------------------------------------------
+   estilos.css - Centro Veterinario PatitasSanas
+   Paleta de colores, tipografía y distribución propia.
+   ------------------------------------------------------ */
+
+:root {
+    --verde-principal: #2f9e6f;
+    --verde-oscuro: #1f6f4d;
+    --crema: #fdf6ec;
+    --gris-texto: #3a3a3a;
+    --borde: #d8cfc0;
+    --fila-alterna: #f1f8f4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Verdana, Arial, sans-serif;
+    background-color: var(--crema);
+    color: var(--gris-texto);
+}
+
+.cabecera {
+    background-color: var(--verde-principal);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.cabecera h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+}
+
+.contenido {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta h2 {
+    color: var(--verde-oscuro);
+    margin-top: 0;
+    border-bottom: 2px solid var(--verde-principal);
+    padding-bottom: 8px;
+}
+
+/* ----- Formulario ----- */
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 6px;
+}
+
+.formulario input {
+    padding: 8px 10px;
+    border: 1px solid var(--borde);
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.formulario input:focus {
+    outline: none;
+    border-color: var(--verde-principal);
+}
+
+.formulario button {
+    margin-top: 12px;
+    align-self: flex-start;
+    background-color: var(--verde-principal);
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.formulario button:hover {
+    background-color: var(--verde-oscuro);
+}
+
+/* ----- Tabla de pacientes ----- */
+.listado table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.listado th {
+    background-color: var(--verde-oscuro);
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.listado td {
+    padding: 10px;
+    border-bottom: 1px solid var(--borde);
+}
+
+.listado tbody tr:nth-child(even) {
+    background-color: var(--fila-alterna);
+}
+
+.listado tbody tr:hover {
+    background-color: #e4f2e9;
+}
+
+.listado button {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background-color 0.2s ease;
+}
+
+.listado button:hover {
+    background-color: #922b21;
+}
